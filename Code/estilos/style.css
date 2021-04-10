@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 2px red;
+    font-family: Arial;
+}
+
+.mao {
+    width: 150px;
+    height: 150px;
+}
+
+.animation {
+    width: 1000px;
+    height: 100px;
+}
+
+.botao {
+    background-color: black;
+    color: brown;
+    border-radius: 15%;
+}
+
+.res {
+    background-color: black;
+    color: dimgrey;
+    width: 200px;
+    height: 50px;
+}
+
+#trilha {
+    background-color: black;
+    color: black;
+    width: 100px
+}
