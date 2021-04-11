@@ -132,9 +132,9 @@ function rodadas() {
 
         corpo.innerHTML = ''
 
-        corpo.innerHTML = '<h1>1958</h1>'
+        corpo.innerHTML = '<h1>Como as coisas evoluem</h1>'
 
-        corpo.innerHTML += '(albert einstein * x) + 54'
+        corpo.innerHTML += '1958'
         corpo.innerHTML += '<br><input type="text" name="" id="res" class="res" placeholder="Resposta...">'
         corpo.innerHTML += '<br><br><input type="button" value="Responder" onclick="rodadas()" class="botao">'
 
