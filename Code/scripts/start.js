@@ -1,6 +1,5 @@
 function start() {
     let corpo = window.document.getElementById('corpo')
-    let cabeca = window.document.getElementById('cabeca')
 
     let title = window.document.querySelector('title')
 

@@ -1,4 +1,4 @@
-window.r = {
+window.respostas.gb = {
     1: 'JUSTIN TRUDEAU',
     2: 'VIADUTO MARIA CONCEIÇÃO GALVÃO ANDRADE',
     3: '121221',

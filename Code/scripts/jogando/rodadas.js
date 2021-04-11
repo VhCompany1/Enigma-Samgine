@@ -1,17 +1,11 @@
-let rodada
-
-if (window.fases == undefined) {
-    rodada = 1
-} else {
-    rodada = window.fases
-}
+let rodada = 1
 
 function rodadas() {
     let r = window.document.getElementById('res').value.toUpperCase()
     let corpo = window.document.getElementById('corpo')
     let title = window.document.querySelector('title')
 
-    let respostas = window.r
+    let respostas = window.respostas.gb
 
     if (rodada == 1) {
         if (r == respostas[rodada]) {
