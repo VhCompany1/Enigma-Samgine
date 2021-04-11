@@ -11,13 +11,7 @@ function rodadas() {
     let corpo = window.document.getElementById('corpo')
     let title = window.document.querySelector('title')
 
-    let respostas = {
-        1: 'JUSTIN TRUDEAU',
-        2: 'VIADUTO MARIA CONCEIÇÃO GALVÃO ANDRADE',
-        3: '121221',
-        4: '00110001 00110000 00110000 00110111 00110010 00110111 00101101 00111001 00111001 00110010',
-        5: 'KAMAITACHI'
-    }
+    let respostas = window.r
 
     if (rodada == 1) {
         if (r == respostas[rodada]) {
@@ -103,8 +97,51 @@ function rodadas() {
         corpo.innerHTML += '<audio src="https://cdn.discordapp.com/attachments/825951876725866517/830306927312896040/codigomorse.wav" controls></audio>'
         corpo.innerHTML += '<br><input type="text" name="" id="res" class="res" placeholder="Resposta...">'
         corpo.innerHTML += '<br><br><input type="button" value="Responder" onclick="rodadas()" class="botao">'
+
         if (r == respostas[rodada]) {
-            window.alert('?')
+            window.alert('Você é atencioso?')
+
+            rodada++
+        } else if (r != respostas[rodada] && r != respostas[rodada - 1]) {
+            window.alert('Você erro')
+        }
+    }
+
+    if (rodada == 6) {
+        title.innerHTML = 'Fase 9'
+
+        corpo.innerHTML = ''
+
+        corpo.innerHTML = '<h1>Algo esta errado</h1>'
+
+        corpo.innerHTML += '(albert einstein * x) + 54'
+        corpo.innerHTML += '<br><input type="text" name="" id="res" class="res" placeholder="Resposta...">'
+        corpo.innerHTML += '<br><br><input type="button" value="Responder" onclick="rodadas()" class="botao">'
+
+        if (r == respostas[rodada]) {
+            window.alert('Você gosta de datas?')
+
+            rodada++
+        } else if (r != respostas[rodada] && r != respostas[rodada - 1]) {
+            window.alert('Você erro')
+        }
+    }
+
+    if (rodada == 7) {
+        title.innerHTML = 'Fase 7'
+
+        corpo.innerHTML = ''
+
+        corpo.innerHTML = '<h1>1958</h1>'
+
+        corpo.innerHTML += '(albert einstein * x) + 54'
+        corpo.innerHTML += '<br><input type="text" name="" id="res" class="res" placeholder="Resposta...">'
+        corpo.innerHTML += '<br><br><input type="button" value="Responder" onclick="rodadas()" class="botao">'
+
+        corpo.innerHTML += '<br><escondido>Eu gosto de jogar</escondido>'
+
+        if (r == respostas[rodada]) {
+            window.alert('Você é atencioso?')
 
             rodada++
         } else if (r != respostas[rodada] && r != respostas[rodada - 1]) {

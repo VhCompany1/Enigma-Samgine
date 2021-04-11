@@ -35,3 +35,9 @@ body {
     color: black;
     width: 100px
 }
+
+escondido {
+    color: black;
+    font-size: 10pt;
+    text-shadow: none;
+}
