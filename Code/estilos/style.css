@@ -20,6 +20,7 @@ body {
     background-color: black;
     color: brown;
     border-radius: 15%;
+    width: 100px;
 }
 
 .res {

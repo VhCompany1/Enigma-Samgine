@@ -1,4 +1,10 @@
-let rodada = 1
+let rodada
+
+if (window.fases == undefined) {
+    rodada = 1
+} else {
+    rodada = window.fases
+}
 
 function rodadas() {
     let r = window.document.getElementById('res').value.toUpperCase()
@@ -13,17 +19,13 @@ function rodadas() {
         5: 'KAMAITACHI'
     }
 
-    /*import r from './respostas.js'
-
-    let respostas = r*/
-
     if (rodada == 1) {
         if (r == respostas[rodada]) {
             window.alert('Muito bem..')
 
             rodada++
         } else {
-            window.alert('Você errou')
+            window.alert('Você errou 1')
         }
     }
 
