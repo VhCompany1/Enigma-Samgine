@@ -64,5 +64,5 @@ function save() {
 }
 
 function canceled() {
-    document.location.reload(true);
+    indexpage()
 }

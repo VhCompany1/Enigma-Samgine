@@ -5,7 +5,7 @@ function rodadas() {
     let corpo = window.document.getElementById('corpo')
     let title = window.document.querySelector('title')
 
-    let respostas = window.respostas.gb
+    let respostas = window.respostas
 
     if (rodada == 1) {
         if (r == respostas[rodada]) {
@@ -13,7 +13,7 @@ function rodadas() {
 
             rodada++
         } else {
-            window.alert('Você errou 1')
+            window.alert('Você errou')
         }
     }
 
@@ -135,7 +135,28 @@ function rodadas() {
         corpo.innerHTML += '<br><escondido>Eu gosto de jogar</escondido>'
 
         if (r == respostas[rodada]) {
-            window.alert('Você é atencioso?')
+            window.alert('Quando você nasceu')
+
+            rodada++
+        } else if (r != respostas[rodada] && r != respostas[rodada - 1]) {
+            window.alert('Você erro')
+        }
+    }
+
+    if (rodada == 8) {
+        title.innerHTML = 'Fase 8'
+
+        corpo.innerHTML = ''
+
+        corpo.innerHTML = '<h1>Esse som é muito bom</h1>'
+
+        corpo.innerHTML += '<iframe width="560" height="315" src="https://www.youtube.com/embed/I9l68g7G36E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        corpo.innerHTML += '<br><br><input type="button" value="Responder" onclick="rodadas()" class="botao">'
+
+        corpo.innerHTML += '<br><escondido>nada aqui...</escondido>'
+
+        if (r == respostas[rodada]) {
+            window.alert('?')
 
             rodada++
         } else if (r != respostas[rodada] && r != respostas[rodada - 1]) {
